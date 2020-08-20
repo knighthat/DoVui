@@ -1,0 +1,4 @@
+name: DoVui
+author: KnightHat
+main: me.knighthat.DoVui.DoVui
+version: ${VersionNumber}

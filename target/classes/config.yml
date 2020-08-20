@@ -1,0 +1,36 @@
+#Khoảng cách giữa các lần đặt câu hỏi - 10 phút đến 1 tiếng là khoảng thời gian bạn có thể đặt (tương đương 600 giây tới 3600 giây)
+VongLap: 30 #Tính bằng giây
+
+#Cho phép chọn đại các câu hỏi không theo trình tự
+NgauNhien: true
+
+#Người chơi có thể trả lời trong bao nhiêu GIÂY kể từ khi câu hỏi được đưa ra. Thời gian chờ không thể quá thời gian giữa các vòng lặp và không thể ít hơn 5 giây.
+ThoiGian: 10
+
+#Ký hiệu về thời gian
+Phut: "phút"
+Giay: "giây"
+
+#Xuất hiện đằng sau câu hỏi (với mục đích hướng dẫn người chơi trả lời câu hỏi)
+HuongDan: "&1&lĐặt dấu '!' trước câu trả lời thì mới được tính nhé!"
+
+#Khi người chơi cố gắng nhập câu trả lời khi đã hết thời gian
+HetThoiGian: "&aThời gian trả lời câu hỏi của bạn lâu hơn cho phép! Hãy chờ lượt sau nhé."
+
+#Nếu người chơi cố gắng nhập lại kết quả sau 1 lần thử
+DaTraLoi: "&b&lBạn đã trả lời câu hỏi này rồi. Hãy đợi đến câu tiếp theo nhé!"
+
+CauHoi:
+  1:
+    CauHoi: "&6&lAi là người dẹp trai nhất?"
+    CauTraLoi: "knighthat"
+    PhanThuong:
+      - "TINNHAN:&aBạn đã đoán trúng kết quả"
+      - "TINNHAN:&aThời gian bản trả lời câu hỏi này là {THOIGIAN}"
+      - "eco give {NGUOICHOI} 1000"
+  2:
+    CauHoi: "&c&lNếu ông già leo lên đỉnh núi, hỏi ổng thấy gì?"
+    CauTraLoi: "thấy mệt"
+    PhanThuong:
+      - "TINNHAN:&aBạn đã đoán trúng kết quả"
+      - "eco give {NGUOICHOI} 1000"
